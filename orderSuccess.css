@@ -1,0 +1,102 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff6b6b, #ff9f43);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.success-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Checkmark */
+.checkmark {
+    font-size: 60px;
+    color: white;
+    background: #28a745;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    box-shadow: 0 5px 15px rgba(40,167,69,0.5);
+}
+
+/* Heading */
+.card h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Text */
+.card p {
+    color: #666;
+}
+
+/* Order Info */
+.order-info {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.actions {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    background: #ff6b6b;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #ff4757;
+}
+
+/* Secondary Button */
+.secondary {
+    background: #57606f;
+}
+
+.secondary:hover {
+    background: #2f3542;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

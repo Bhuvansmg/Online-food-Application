@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* BODY */
+body {
+    background: #ffffff;
+}
+
+/* CONTAINER (CENTERING FIX) */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+/* FORM CARD */
+.RegisterServlet {
+    width: 100%;
+    max-width: 420px;
+    background: #1a1d24;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #2a2f3a;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* TITLE */
+.RegisterServlet h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ff5722;   /* Swiggy/Zomato orange */
+    font-weight: 600;
+}
+
+/* FORM GROUP */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* LABEL */
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #9aa4af;
+}
+
+/* INPUT */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #2a2f3a;
+    background: #111318;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+/* PLACEHOLDER */
+.form-group input::placeholder {
+    color: #6b7280;
+}
+
+/* INPUT FOCUS */
+.form-group input:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 0 2px rgba(255, 87, 34, 0.2);
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    padding: 13px;
+    background: #ff5722;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.btn:hover {
+    background: #e64a19;
+    transform: translateY(-1px);
+}
+
+/* LOGIN TEXT */
+.login-text {
+    margin-top: 18px;
+    text-align: center;
+    color: #9aa4af;
+    font-size: 13px;
+}
+
+/* LINK */
+.login-text a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}

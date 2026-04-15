@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f8f8f8;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6b00;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.nav-links a:hover {
+    color: #ff6b00;
+}
+
+/* USER NAME */
+.nav-links span {
+    background: #ffe8d9;
+    color: #ff6b00;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* CART BUTTON */
+.nav-links a[href="cart.jsp"] {
+    background: #ff6b00;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.nav-links a[href="cart.jsp"]:hover {
+    background: #e65c00;
+}
+
+/* LOGIN BUTTON */
+.nav-links a[href="login.jsp"] {
+    border: 1px solid #ff6b00;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.nav-links a[href="login.jsp"]:hover {
+    background: #ff6b00;
+    color: white;
+}
+
+/* LOGOUT */
+.nav-links a[href="logout"] {
+    color: #ff4d4d;
+}
+
+/* ================= HERO ================= */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(to right, #ff6b00, #ff944d);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* SEARCH BOX */
+.hero input {
+    padding: 12px 18px;
+    width: 300px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+.hero button {
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #333;
+}
+
+/* ================= CATEGORIES ================= */
+.categories {
+    padding: 50px 60px;
+}
+
+.categories h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* CATEGORY LIST */
+.category-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CATEGORY CARD */
+.cat {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* HOVER */
+.cat:hover {
+    transform: scale(1.1);
+    background: #fff3eb;
+}
+
+/* ================= RESTAURANTS ================= */
+.restaurants {
+    padding: 50px 60px;
+}
+
+.restaurants h2 {
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+.explore-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6b00;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #e65c00;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero input {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .categories, .restaurants {
+        padding: 30px 20px;
+    }
+}

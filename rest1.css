@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6b00;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6b00;
+}
+
+/* USER */
+.nav-links span {
+    background: #ffe8d9;
+    color: #ff6b00;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* CART BUTTON */
+.nav-links a[href="cart.jsp"] {
+    background: #ff6b00;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.nav-links a[href="cart.jsp"]:hover {
+    background: #e65c00;
+}
+
+/* LOGIN BUTTON */
+.nav-links a[href="login.jsp"] {
+    border: 1px solid #ff6b00;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.nav-links a[href="login.jsp"]:hover {
+    background: #ff6b00;
+    color: white;
+}
+
+/* LOGOUT */
+.nav-links a[href="logout"] {
+    color: #ff4d4d;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* ================= CARD ================= */
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.card-content {
+    padding: 15px;
+}
+
+/* NAME */
+.restaurant-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+/* INFO */
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* RATING */
+.rating {
+    background: #28a745;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* TIME */
+.time {
+    font-size: 14px;
+    color: #777;
+}
+
+/* LOCATION */
+.location {
+    font-size: 13px;
+    color: #999;
+}
+
+/* LINK */
+.res-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* EMPTY */
+.empty {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .container {
+        padding: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* BODY */
+body {
+    background: #0f1115;
+}
+
+/* CONTAINER (CENTER CARD) */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* needed for h2 + form */
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+/* TITLE */
+.container h2 {
+    color: #ff5722;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* FORM CARD */
+form {
+    width: 100%;
+    max-width: 380px;
+    background: #1a1d24;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #2a2f3a;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* FORM GROUP */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* LABEL */
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #9aa4af;
+}
+
+/* INPUT */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #2a2f3a;
+    background: #111318;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+/* INPUT FOCUS */
+.form-group input:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 0 2px rgba(255, 87, 34, 0.2);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff5722;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    background: #e64a19;
+}
+
+/* TEXT */
+.login-text {
+    margin-top: 15px;
+    color: #9aa4af;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* LINK */
+.login-text a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
